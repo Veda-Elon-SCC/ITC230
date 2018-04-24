@@ -10,7 +10,6 @@ http.createServer(function(req,res) {
         res.end(data.toString());
         console.log(data.toString());
       });
-
       break;
     case '/about':
       res.writeHead(200, {'Content-Type': 'text/plain'});
