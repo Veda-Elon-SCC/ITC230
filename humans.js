@@ -6,6 +6,8 @@ var humans = [
   {firstName : "Pat", lastName : "Smith", born : 2004}
 ];
 
-console.log(humans);
-console.log(humans[0]);
-console.log(humans[2]);
+function getAll() {
+       return humans.firstName;
+    };
+
+console.log(humans.getAll);
