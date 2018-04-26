@@ -7,19 +7,23 @@ var humans = [
 ];
 
 function getAll() {
-       return humans;
-    };
+  return humans;
+};
 
 console.log(getAll());
 
-function getOne() {
-       return humans[3];
+function get(firstName) {
+       return humans.find(function(human) {
+         return human.firstName.toLowerCase() == firstName.toLowerCase();
+       });
     };
 
-console.log(getOne());
+console.log(get('maryanne'));
 
-function get() {
-       return humans[3].firstName + ' ' + humans[3].lastName + ', born: ' + humans[3].born;
-    };
+function del(){
+  humans.splice(2, 1);
 
-console.log(get());
+  }
+};
+
+console.log(del());
